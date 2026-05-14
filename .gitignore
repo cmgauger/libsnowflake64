@@ -7,5 +7,6 @@
 *.sdf
 
 # build results
+bin/
 build/
 lib/

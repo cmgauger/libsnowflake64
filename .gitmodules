@@ -1,9 +1,9 @@
-[submodule "exterm/windows_dependencies"]
-	path = extern/windows_dependencies
-	url = https://github.com/cmgauger/windows_dependencies
 [submodule "extern/liblogger"]
 	path = extern/liblogger
 	url = https://github.com/cmgauger/liblogger.git
 [submodule "extern/libargtable3"]
 	path = extern/libargtable3
 	url = https://github.com/cmgauger/libargtable3.git
+[submodule "extern/windows_dependencies"]
+	path = extern/windows_dependencies
+	url = https://github.com/cmgauger/windows_dependencies
