@@ -1,0 +1,4 @@
+ 1. Write a makefile
+ 2. Figure out why the Visual Studio batch file fails to build the Release
+    libraries, and the 64-bit Debug library
+ 3. Write a makefile for the Visual Studio toolkit's native nmake

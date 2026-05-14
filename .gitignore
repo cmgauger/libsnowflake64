@@ -1,0 +1,11 @@
+# Visual Studio user-specific files
+*.suo
+*.user
+
+# Visual C++ cache files
+*.opensdf
+*.sdf
+
+# build results
+build/
+lib/
