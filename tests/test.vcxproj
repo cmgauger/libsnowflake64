@@ -101,6 +101,7 @@
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -108,8 +109,8 @@
       <AdditionalDependencies>libargtable3.lib;libcunit.lib;liblogger.lib;libsnowflake64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
-MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
+      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
+MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
     </PreLinkEvent>
     <PreLinkEvent>
       <Message>Build the required libraries for the test application.</Message>
@@ -126,6 +127,7 @@ MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Prop
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,8 +135,8 @@ MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Prop
       <AdditionalDependencies>libargtable3.lib;libcunit.lib;liblogger.lib;libsnowflake64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
-MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
+      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
+MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
     </PreLinkEvent>
     <PreLinkEvent>
       <Message>Build the required libraries for the test application.</Message>
@@ -153,6 +155,7 @@ MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Prop
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -162,8 +165,8 @@ MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Prop
       <AdditionalDependencies>libargtable3.lib;libcunit.lib;liblogger.lib;libsnowflake64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
-MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
+      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
+MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
     </PreLinkEvent>
     <PreLinkEvent>
       <Message>Build the required libraries for the test application.</Message>
@@ -182,6 +185,7 @@ MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Prop
       </PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -191,8 +195,8 @@ MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Prop
       <AdditionalDependencies>libargtable3.lib;libcunit.lib;liblogger.lib;libsnowflake64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
-MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Target:Build /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
+      <Command>MSBuild /nologo $(SolutionDir)extern\libargtable3\libargtable3.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)
+MSBuild /nologo $(SolutionDir)extern\liblogger\liblogger.sln /Property:Configuration=$(Configuration) /Property:Platform=$(Platform)</Command>
     </PreLinkEvent>
     <PreLinkEvent>
       <Message>Build the required libraries for the test application.</Message>
