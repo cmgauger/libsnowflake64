@@ -10,3 +10,7 @@
 bin/
 build/
 lib/
+
+# documentation output
+doc/html/
+doc/latex/

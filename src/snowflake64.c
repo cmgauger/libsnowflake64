@@ -47,8 +47,10 @@
 /** \endcond */
 
 /**
- * \brief
+ * \brief stores the worker numbers which have been created/assigned
  *
+ * The "node" structure of a BSD <tt>tree.h</tt>-defined Red-Black tree of
+ * assigned/created worker numbers for the Snowflake ID generator context.
  */
 struct worker_node {
 	int worker_number;
@@ -57,7 +59,7 @@ struct worker_node {
 	 */
 	RB_ENTRY(worker_node) node;
 	/**<
-	 * node pointer for the reb-black tree
+	 * node pointer for the red-black tree
 	 */
 };
 
@@ -81,7 +83,7 @@ struct snowflake64_context_s {
 	 */
 	void *timefunc_state;
 	/**<
-	 * optional state variable which is passed to \c timefunc
+	 * optional state variable which is passed to <tt>timefunc</tt>
 	 */
 	uint64_t base;
 	/**<
@@ -109,7 +111,7 @@ struct snowflake64_s {
 	 */
 	void *timefunc_state;
 	/**<
-	 * state variable which is passed to \c timefunc
+	 * state variable which is passed to <tt>timefunc</tt>
 	 */
 	uint64_t base;
 	/**<
@@ -147,7 +149,8 @@ static int valid_date(struct tm);
 /**
  * \brief Snowflake ID maximum number of workers
  *
- * This function returns the maximum worker number that can be assigned.
+ * This function returns the maximum worker number that can be created/assigned
+ * to a single generator context.
  *
  *
  *
@@ -217,7 +220,7 @@ snowflake64_active_generators(snowflake64_context_h context) {
  * variable is optional, and can be NULL if it is unneeded.
  *
  * The time function must provide the current time in milliseconds since the
- * UNIX epoch (January 1, 1970 at 00:00:00).  The following code exceprt is a
+ * UNIX epoch (January 1, 1970 at 00:00:00).  The following code excerpt is a
  * genericized, in that it will run on Windows and Linux systems, implementation
  * of the time function, if the reader wishes for a starting point for their own
  * implementation:
@@ -264,15 +267,16 @@ get_current_time(void *state) {
 	return x;
 }
  * \endcode
- * Note the use of C++ style comments is only to prevent issues with the C
- * preprocessor and documentation system, please replace them with proper C
- * style comments.
+ * Note the use of C++ style comments in the above exemplar function is only to
+ * prevent issues with the C preprocessor and documentation system, please
+ * replace them with proper C style comments if you wish to use the function.
  *
  * The sequence variable chooses a sequence to issue worker ID numbers in, using
- * Andrew Kensler's \ref permute function.
+ * Andrew Kensler's <tt>permute()</tt>\ref permute function.
  *
- * Once operations with the context are finished, the memory can be free using
- * the \ref snowflake64_context_destroy function.
+ * Once operations with the context are finished, the memory can be freed using
+ * the <tt>snow_flake64_context_destroy()</tt>\ref snowflake64_context_destroy
+ * function.
  *
  *
  *
@@ -287,7 +291,7 @@ get_current_time(void *state) {
  * \param [in] timefunc  function which returns the current time in milliseconds
  *     since the UNIX epoch
  * \param [in,out] timefunc_state  optional (if not required, set to NULL) state
- *     variable which is passed to \c timefunc
+ *     variable which is passed to <tt>timefunc</tt>
  */
 snowflake64_context_h
 snowflake64_context_init(struct tm epoch, int epoch_millis,
