@@ -27,6 +27,7 @@
  * \author	Christian Gauger-Cosgrove
  * \version	0.0.1
  */
+#include <limits.h>
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
@@ -37,8 +38,6 @@
 #	include <sys/tree.h>
 #endif
 
-//#include <cryptsim/date_time.h>
-//#include <cryptsim/util.h>
 #include <snowflake64.h>
 
 /** \cond */
