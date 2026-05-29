@@ -32,10 +32,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+
 #if defined(__linux__)
 #	include <bsd/sys/tree.h>
+#elif defined(__APPLE__)
+#	include "tree.h"
 #else
-#	include <sys/tree.h>
+#	include "sys/tree.h"
 #endif
 
 #include <snowflake64.h>
